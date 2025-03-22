@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  sqlserver:
+    container_name: sql-server-container
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    restart: always
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=Password1*
+    ports:
+      - "1433:1433"
+
+#docker run --rm -it mcr.microsoft.com/mssql-tools sqlcmd -S 127.0.0.1 -U sa -P "Password1*" -Q "SELECT @@VERSION"
