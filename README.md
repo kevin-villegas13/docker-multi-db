@@ -1,6 +1,6 @@
 # Docker Multi Database
 
-Este repositorio contiene configuraciones de Docker Compose para múltiples bases de datos, permitiendo levantar entornos de desarrollo rápidamente.
+Configuraciones de los Docker Compose para múltiples bases de datos, permitiendo levantar entornos de desarrollo rápidamente.
 
 ## 📌 Bases de datos disponibles
 - **PostgreSQL**
@@ -10,7 +10,7 @@ Este repositorio contiene configuraciones de Docker Compose para múltiples base
 
 1. Clona este repositorio:
    ```sh
-   [git clone https://github.com/kevin-villegas13/docker-multi-db.git](https://github.com/kevin-villegas13/docker-multi-db.git)
+   git clone https://github.com/kevin-villegas13/docker-multi-db.git
    cd docker-multi-db
    ```
 
