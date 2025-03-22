@@ -5,6 +5,7 @@ Configuraciones de los Docker Compose para múltiples bases de datos, permitiend
 ## 📌 Bases de datos disponibles
 - **PostgreSQL**
 - **SQL Server**
+- **MYSQL**
 
 ## 🚀 Instalación y uso
 
