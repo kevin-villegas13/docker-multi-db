@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:latest
+    container_name: mysql-container
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root123  # Contraseña del usuario root (cámbiala en producción)
+      MYSQL_DATABASE: mydatabase  # Nombre de la base de datos por defecto
+      MYSQL_USER: admin  # Usuario adicional
+      MYSQL_PASSWORD: admin123  # Contraseña del usuario adicional
+    ports:
+      - "3307:3306"  # Expone el puerto 3306 en el contenedor como 3307 en la máquina host
+    volumes:
+      - mysql_data:/var/lib/mysql  # Persistencia de datos
+
+volumes:
+  mysql_data:
+
+# 🔹 Para conectarte desde la terminal:
+# docker exec -it mysql-container mysql -u admin -p
